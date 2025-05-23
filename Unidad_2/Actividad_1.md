@@ -19,7 +19,10 @@ stateDiagram-v2
     Presionado --> Presionado: 30ms y Pulsador ON
     Debounce_Release --> Espera: 30ms y Pulsador OFF
     Debounce_Release --> Presionado: 30ms y Pulsador ON
+```
 
+```mermaid
+stateDiagram-v2
     state Espera {
         [*] --> LED_Off
         LED_Off --> LED_On: Pulsador estable
